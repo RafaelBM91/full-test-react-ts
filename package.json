@@ -1,0 +1,60 @@
+{
+  "name": "full-test-react-ts",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "postcss-loader": "^2.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts-ts": "2.13.0"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./__test__/TestFileTransformer.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "jest",
+    "eject": "react-scripts-ts eject",
+    "jest:update": "jest -u"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "TypeScript",
+    "ES6",
+    "Jest"
+  ],
+  "author": "Rafael Bricreño <rafaelbm91>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelBM91/full-test-react-ts.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.1",
+    "@types/node": "^9.4.1",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-test-renderer": "^16.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "react-test-renderer": "^16.2.0",
+    "ts-jest": "^22.0.3",
+    "typescript": "^2.7.1"
+  },
+  "license": "MIT"
+}
